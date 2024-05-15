@@ -8,6 +8,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/nl-be";
 import {useLeafletContext} from '@react-leaflet/core';
 import L from 'leaflet';
+import {LocateControl} from "./LocateControl";
 
 const colors = ["#fff7f3", "#fde0dd", "#fcc5c0", "#fa9fb5", "#f768a1", "#dd3497", "#ae017e", "#7a0177", "#49006a"];
 
@@ -133,7 +134,8 @@ function App() {
           </LayerGroup>
         }
         <Legend labels={labels} colors={colors} />
-      </MapContainer>
+        <LocateControl position="topleft" keepCurrentZoomLevel={true} />
+        </MapContainer>
     </div>
   );
 }

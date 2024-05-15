@@ -14,3 +14,11 @@ html, body {
   margin-right: 8px;
   opacity: 0.7;
 }
+
+.modal-content {
+  border: 0 !important;
+}
+
+.modal-header {
+  border-bottom: 0px !important;
+}

@@ -39,7 +39,7 @@ const Legend = (props) => {
       for (var i = 0; i < usedColors.length; i++) {
         el.innerHTML += '<i style="background-color: ' + usedColors[i] + '"></i>' + props.labels[i] + '<br/>';
       }
-      el.innerHTML += '<span style="padding-top: 5px; display: inline-block;"><i style="border-radius: 9px; border: 2px solid #fcad03;"></i>waarneming</span><br/>';
+      el.innerHTML += '<span style="padding-top: 5px; display: inline-block;"><i style="border-radius: 9px; border: 2px solid #fcad03;"></i>melding</span><br/>';
       return el;
     }
   });

@@ -123,7 +123,7 @@ function App() {
                 style={{"weight": 0, "color": colors[n], "fillOpacity": 0.7}}
                 onEachFeature={(feature, layer) => {
                   layer.bindPopup(() => {
-                    return "<span>Kans op hagel: " + Math.round(feature.properties.value / 255 * 100) + "%</span>"
+                    return "<span>" + labels[n] + "<br/>kans op hagel: " + Math.round(feature.properties.value / 255 * 100) + "%</span>"
                   }, {});
                 }}
               />)

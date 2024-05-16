@@ -86,7 +86,7 @@ function App() {
         });
 
         setMaps(data.maps);
-        setObservations(data.observations ? data.observations : data.alerts);
+        setObservations(data.observations);
         setLabels(newLabels);
         setLastTime(newLastTime);
         setI(i => i + 1);

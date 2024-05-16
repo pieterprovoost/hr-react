@@ -95,7 +95,7 @@ function App() {
     fetchData();
     setInterval(() => {
       fetchData();
-    }, 60000);
+    }, 30000);
   }, []);
 
   return (

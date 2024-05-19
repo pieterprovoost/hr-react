@@ -134,7 +134,7 @@ function App() {
           observations && <LayerGroup key={"observations_" + i}>
             {
               observations.features.map((feature) => <CircleMarker center={[feature.geometry.coordinates[1], feature.geometry.coordinates[0]]} radius={10} color="#fcad03" weight={2} opacity={0.5} fillOpacity={0}>
-                <Popup>{feature.properties.timestamp}<br/>{feature.properties.obs_intensity_description}</Popup>
+                <Popup>{formatDate(feature.properties.timestamp)}<br/>{feature.properties.intensity_description}</Popup>
               </CircleMarker>)
             }
           </LayerGroup>
